@@ -1,16 +1,196 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid */
+}
+
 body {
   width: auto;
+  min-width: auto;
 }
 
 img {
-  max-width: 100%;
+  max-width: 100% !important;
+  height: auto;
 }
 
 #tpccontent {
   width: auto;
   max-width: 1085px;
+  padding: 0 10px;
+}
+
+#body_wrapper_fix {
+  padding: 0;   
+  overflow: hidden;
 }
 
 .row-construction-info {
   width: auto;
+}
+
+.featured-suppliers-box {
+  flex-wrap: wrap;
+}
+
+.logo-image {
+  display: inline-block;
+  float: none;
+  height: auto;
+  max-width: 50%;
+}
+
+.ads-inline, 
+.ads-inline-contact {
+  width: auto;
+  max-width: 768px;
+  height: auto;
+}
+
+.postbit, .postbitlegacy, .eventbit {
+  float: none;
+}
+
+.pagetitle {
+  margin: 20px 0;
+}
+
+.pagetitle .threadicon {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.featured-suppliers-box {
+  width: 100%;
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+  .bbcode_quote .quote_container {
+      font-size: 14px !important;
+      line-height: 1.2;
+      padding: 5px;
+  }
+  .postbit .postrow, .postbit .posttitle {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #navbar_loginform.topbuttons {
+    margin: 0;
+    flex: 1;
+    text-align: right;
+  }  
+  #no-register {
+    display: none;
+  }
+  #navbar_loginform {
+    font-size: 0;
+  }
+  .navtabs li {
+    display: none;
+  }
+  .navbar_search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .globalsearch {
+    position: static;
+    float: none;
+  }
+  .textboxcontainer {
+    height: auto;
+    float: none;
+  }
+  .doc_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row-construction-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row-construction-info .row{
+    display: table-row;
+    padding-bottom: 10px;
+  }
+  .row-construction-info .label,
+  .row-construction-info .data {
+    display: table-cell !important;
+    width: auto !important;
+    float: none !important;
+  }
+  .row-construction-info .data, .row-construction-info .label{
+    width: 40% !important;
+    padding-bottom: 5px;
+  }
+  .row-construction-info .col-left,
+  .row-construction-info .col-right {
+    display: table;
+    width: 100%;
+  }
+
+  .above_postlist, #above_postlist {
+    float: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pagination_top {
+    position: static;
+  }
+  .globalsearch .textboxcontainer {
+    float: none;
+    height: auto;
+  }
+
+  #postpagestats_above {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  /* post */
+  .bbcode_container {
+    margin: 5px 0;
+  }
+
+  .postrow a {
+    color: #0f3a99;
+  }
+  .postbit .postfoot, .postbitlegacy .postfoot, .eventbit .eventfoot {
+    float: none;
+    font-size: 12px;
+  }
+  .postbit .posthead, .postbitlegacy .posthead, .eventbit .eventhead {
+    background: #0f3a99;
+    padding: 10px;
+    display: flex;
+    color: #fff;
+  }
+  .postbit .posthead .nodecontrols a, .postbitlegacy .posthead .nodecontrols a, .eventbit .eventhead .nodecontrols a {
+    color: #fff;
+  }
+  .postbit .posthead .nodecontrols, .postbitlegacy .posthead .nodecontrols, .eventbit .eventhead .nodecontrols {
+    padding: 0;
+    position: static;
+  }
+  .postbit .posthead .postdate.old, .postbitlegacy .posthead .postdate.old {
+    margin: 0 10px 0 0;
+    padding: 0;
+  }
+  .postbit .postdate .time {
+    color:inherit;
+    margin: 0;
+  }
+  .postbit .userinfo, .postbit .userinfo_noavatar {
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .footer_add_links a {
+    font-size: 12px;
+  }
+  
 }
